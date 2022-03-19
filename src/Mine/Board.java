@@ -216,9 +216,8 @@ public class Board extends JPanel {
     
     //if cell has no mines next to it, we have to reveal all the cells
     //that are around it, and then keep going until we find a cells that are
-    //touching mines. Stupid af idk wtf to do
+    //touching mines.
     if(c.adjacentMines == 0) {
-      //write recursive method
       
       int[][] adjacentCoords = getAdjacentCells(c.x, c.y);
 
